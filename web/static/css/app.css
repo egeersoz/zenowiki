@@ -1,0 +1,42 @@
+/* This file is for your main application css. */
+
+.form-control {
+	color: #D6D6D6 !important;
+	background: #222222 !important;
+}
+
+body {
+	color: #D6D6D6 !important;
+	background: #222222;
+	padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.jumbotron {
+	color: #222222;
+}
+
+footer {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+.navbar-brand.logo {
+  padding-top: 10px;
+}
+
+ul.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-nav > li > form > a {
+	color: #9d9d9d;
+	padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.logo > img {
+  height: 30px;
+}

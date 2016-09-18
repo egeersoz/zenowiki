@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}", name: "Zeno Wiki!" %></h2>
+  <p class="lead">A secure online resource that<br />hosts Zeno's entire knowledge base.</p>
+</div>
+
+<div class="row marketing">
+  
+</div>

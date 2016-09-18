@@ -1,0 +1,8 @@
+<h2><%= @post.title %></h2>
+
+<div class="post-body">
+  <%= raw(@post.body) %>
+</div>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>
