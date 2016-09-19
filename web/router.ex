@@ -33,12 +33,12 @@ defmodule Zenowiki.Router do
   scope "/", Zenowiki do
     pipe_through :browser
 
-    get "/", PageController, :index
+    # get "/", PageController, :index
   end
 
   scope "/", Zenowiki do
     pipe_through :protected
-
+    get "/", PostController, :index
     resources "/users", UserController
     resources "/posts", PostController
   end
