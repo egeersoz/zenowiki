@@ -42,6 +42,7 @@ if (path.indexOf("posts/new") != -1 || (path.indexOf("posts") != -1 && path.inde
 	tinymce.init({
 	  selector: '#editor',
 	  skin_url: "/tinymce", //set the path to the skin files relative to the baseURL
+	  content_css: window.location.origin + "/tinymce/tinymce_custom.css",
 	  plugins: ['paste', 'link', 'autoresize', 'image']
 	})
 }
