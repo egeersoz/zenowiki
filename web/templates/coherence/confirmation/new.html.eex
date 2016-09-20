@@ -1,6 +1,6 @@
 <br \>
 
-<h3>Resend Confirmation Instructions</h3>
+<h3>Resend confirmation instructions</h3>
 
 <%= form_for @changeset, confirmation_path(@conn, :create), [as: :confirmation], fn f  -> %>
 

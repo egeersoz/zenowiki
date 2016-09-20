@@ -1,11 +1,11 @@
 <div>
   <p>Hello <%= @name %>!<p>
   <p>
-    You have been invited to create an Account. Use the link below to create
-    an account.
+    You have been invited to create an account on Zeno Wiki. Use the link below to create
+    one.
   </p>
   <p>
-    <a href="<%= @url %>">Create my Account</a>
+    <a href="<%= @url %>">Create my account</a>
   </p>
   <p>Thank you!</p>
 </div>

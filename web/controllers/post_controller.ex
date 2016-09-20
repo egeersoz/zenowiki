@@ -1,5 +1,4 @@
 defmodule Zenowiki.PostController do
-  require Logger
   use Zenowiki.Web, :controller
 
   alias Zenowiki.Post
