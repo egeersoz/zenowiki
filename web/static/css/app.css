@@ -1,15 +1,11 @@
 /* This file is for your main application css. */
 
-.form-control {
-	color: #D6D6D6 !important;
-	background: #222222 !important;
-}
-
 body {
 	color: #D6D6D6 !important;
 	background: #222222;
 	padding-top: 50px;
   padding-bottom: 20px;
+  font-size: 14px;
 }
 
 .jumbotron {

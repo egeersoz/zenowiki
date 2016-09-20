@@ -34,8 +34,4 @@ config :coherence,
   logged_out_url: "/",
   email_from: {"Zeno Wiki", "zenowiki@zenoimaging.com"},
   opts: [:rememberable, :invitable, :confirmable, :authenticatable, :recoverable, :lockable, :trackable, :unlockable_with_token, :registerable]
-
-config :coherence, Zenowiki.Coherence.Mailer,
-  adapter: Swoosh.Adapters.Sendgrid,
-  api_key: "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"
 # %% End Coherence Configuration %%

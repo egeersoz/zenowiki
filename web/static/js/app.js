@@ -20,6 +20,28 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-//var config = require("ckeditor").config
-//import "ckeditor"
-import ckeditor from "./ckeditor"
+
+// Import TinyMCE javascripts from node_modules
+import "tinymce/tinymce"
+import "tinymce/themes/modern/theme"
+
+// Each plugin needs to be imported before they can be initialized
+// in the `plugins` property of tinymce.init()
+import 'tinymce/plugins/paste/plugin'
+import 'tinymce/plugins/link/plugin'
+import 'tinymce/plugins/autoresize/plugin'
+import 'tinymce/plugins/image/plugin'
+
+let path = document.location.pathname
+
+// Initialize TinyMCE, but only if the user is creating or editing a wiki post
+if (path.indexOf("posts/new") != -1 || (path.indexOf("posts") != -1 && path.indexOf("edit") != -1)) {
+	tinymce.baseURL = "/css" //tell tinyMCE where it can find the css files
+	
+	// Initialize
+	tinymce.init({
+	  selector: '#editor',
+	  skin_url: "/tinymce", //set the path to the skin files relative to the baseURL
+	  plugins: ['paste', 'link', 'autoresize', 'image']
+	})
+}

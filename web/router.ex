@@ -32,10 +32,10 @@ defmodule Zenowiki.Router do
 
   scope "/", Zenowiki do
     pipe_through :browser
-
-    # get "/", PageController, :index
   end
 
+  # There is no home page. All routes are piped through the
+  # protected pipeline, which requires the user to be authenticated.
   scope "/", Zenowiki do
     pipe_through :protected
     get "/", PostController, :index
