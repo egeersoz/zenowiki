@@ -36,3 +36,7 @@ ul.navbar-right {
 .logo > img {
   height: 30px;
 }
+
+pre code.hljs {
+  white-space: pre;
+}
