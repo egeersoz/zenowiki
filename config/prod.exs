@@ -24,6 +24,10 @@ config :zenowiki, Zenowiki.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
 
+config :coherence, Zenowiki.Coherence.Mailer,
+  adapter: Swoosh.Adapters.Sendgrid,
+  api_key: System.get_env("SENDGRID_API_KEY")
+
 # Do not print debug messages in production
 config :logger, level: :info
 
